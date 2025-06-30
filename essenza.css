@@ -1,0 +1,353 @@
+*
+{
+    background-color: #FCE4B2;
+    color: #3B1803;
+    margin:0;
+}
+
+button
+{
+    background-color: #3B1803;
+    border-radius:5px;
+    color:#FCE4B2;
+    font-family:'Quintessential', cursive;
+    height: 2.5rem;
+    width: 10rem;
+}
+
+form
+{
+    border: 2px #3B1803 solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer
+{
+    margin: auto;
+    text-align: center;
+    width:90%;
+}
+
+header
+{
+    align-items:flex-end;
+    display: flex;
+    font-family:'Playfair Display', serif;
+    justify-content:space-between
+}
+
+li
+{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+li a
+{
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration:none;
+    width: 100%;
+}
+
+li a:hover
+{
+    text-shadow: 0 0 4px rgba(80, 52, 2, 0.6);
+    /* text-shadow: 0 0 4px red; */
+    transition: text-shadow 0.3s ease;
+}
+
+nav
+{
+    color: #954D1B;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 60px;
+    margin-left: 1.25rem;
+}
+
+p
+{
+    white-space:pre-line;
+}
+
+ul
+{
+    padding: 0;
+    text-align: left;
+}
+
+.btn-subir {
+    background-color: #865439;
+    border-radius: 40%;
+    bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.7;
+    padding: 10px 14px;
+    position: fixed;
+    right: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-subir:hover {
+  background-color: #a56a4b;
+}
+
+.contenedor
+{
+  display: grid;
+  font-family:'Quintessential', cursive;
+  grid-template-rows: repeat(auto-fit, minmax(100vh, auto));
+  /* grid-template-rows: repeat(5, 69vh); */
+}
+
+.descripcionFotoDer
+{
+    font-size: 1.25rem;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.descripcionFotoIzq
+{
+    font-size: 1.25rem;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.finalForm
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.foto
+{
+    border-radius: 5px;
+    width: 380px;
+}
+
+.historia
+{
+    margin-top: -28px;
+}
+
+.inputs
+{
+    width: 70%;
+}
+
+.inputs input,textarea
+{
+    border-radius: 2px;
+    outline: 2px #3B1803 solid;
+    width: 100%;
+}
+
+.logo
+{
+    width: 258px;
+}
+
+.logos
+{
+    width: 40px;
+}
+
+.marca
+{
+    align-items: center;
+    display: flex;
+    font-family:'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.menu
+{
+    position: relative;
+}
+
+.menu a.activo
+{
+    /* position: relative;
+    color: #5a2c0a; */
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a.activo::after
+{
+    background-color: #5a2c0a;
+    border-radius: 2px;
+    bottom: -4px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.menu a:hover::after
+{
+    background-color: rgba(90, 44, 10, 0.4); /* efecto tenue */
+    border-radius: 2px;
+    bottom: -4px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.mujer
+{
+    align-items: center;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: -260px;
+}
+
+.productos, .hombre
+{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.redes
+{
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+}
+
+.seccion
+{
+    display: block;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.seccion hr
+{
+    background-color: #3B1803;
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    margin: 1rem auto 0.5rem auto; /* menos margen abajo */
+    width: 100%;
+}
+
+.tituloSeccion
+{
+    color: #954D1B;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 768px)
+{
+
+  header
+  {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      padding: 1rem;
+  }
+
+  .menu ul
+  {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  .marca
+  {
+      align-items: center;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+  }
+
+  .logo
+  {
+      margin-top: 1rem;
+      width: 180px;
+  }
+
+  .contenedor
+  {
+      grid-template-rows: auto;
+  }
+
+  .productos, .mujer, .hombre
+  {
+      flex-direction: column;
+      justify-content: center;
+      text-align:center;
+  }
+
+  .mujer
+  {
+      margin-top: -50px;
+  }
+
+  .descripcionFotoIzq, .descripcionFotoDer
+  {
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .foto
+  {
+      max-width: 300px;
+      margin: 1rem auto;
+      width: 90%;
+  }
+
+  form
+  {
+      gap: 1rem;
+      flex-direction: column;
+  }
+
+  .inputs, .finalForm
+  {
+      width: 100%;
+  }
+
+  .redes
+  {
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1rem 0;
+  }
+
+  .btn-subir
+  {
+      font-size: 1rem;
+      padding: 8px 10px;
+  }
+
+  .tituloSeccion
+  {
+      font-size: 2.5rem;
+  }
+}
